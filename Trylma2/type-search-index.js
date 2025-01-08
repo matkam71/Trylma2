@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.example.trylma2","l":"BoardView"},{"p":"com.example.trylma2","l":"Client"},{"p":"com.example.trylma2","l":"Main"},{"p":"com.example.trylma2","l":"Server"},{"p":"com.example.trylma2","l":"ServerController"}];updateSearchResults();

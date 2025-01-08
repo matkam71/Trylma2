@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trylma2.ServerController">
+    <children>
+        <MenuButton fx:id="menuButton" layoutY="10.0" layoutX="10.0" text="Liczba graczy">
+            <items>
+                <MenuItem fx:id="menuItem2" text="2" onAction="#onPlayerCountSelected"/>
+                <MenuItem fx:id="menuItem3" text="3" onAction="#onPlayerCountSelected"/>
+                <MenuItem fx:id="menuItem4" text="4" onAction="#onPlayerCountSelected"/>
+                <MenuItem fx:id="menuItem6" text="6" onAction="#onPlayerCountSelected"/>
+                <MenuItem fx:id="menuItem7" text="YinYang" onAction="#onPlayerCountSelected"/>
+            </items>
+        </MenuButton>
+        <Button fx:id="szybkieButton" layoutX="120.0" layoutY="10.0" text="szybkie" onAction="#szybkie" />
+        <Label fx:id="activePlayerLabel" layoutX="650.0" layoutY="20.0" text="Gracz: 1" />
+        <Rectangle fx:id="playerColorBox" layoutX="700.0" layoutY="20.0" width="30" height="30" fill="red" stroke="black"/>
+
+        <!-- Pole wprowadzania ruchu -->
+        <TextField fx:id="moveInputField" layoutX="650.0" layoutY="70.0" promptText="Wpisz ruch (x1 y1 x2 y2)" />
+        <Button fx:id="submitMoveButton" layoutX="650.0" layoutY="110.0" text="Wykonaj ruch" onAction="#onSubmitMove" />
+        <Button fx:id="passTurnButton" layoutX="650.0" layoutY="150.0" text="Rezygnuj z ruchu" onAction="#onPassTurn" />
+        <Button fx:id="checkWinnerButton" text="Wygrałem?" onAction="#onCheckWinner" layoutX="650" layoutY="190"/>
+    </children>
+</AnchorPane>
