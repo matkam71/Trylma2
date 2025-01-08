@@ -1,1 +1,4 @@
 # Trylma2
+
+Pliki źródłowe znajdują się w Trylma2/src/main/java/com/example/trylma2
+Uruchamiamy Main za pomcą Run this file, następnie w okienku wybieramy liczbę graczy (yinyang to też 2) i to czy chcemy grać wariant szybki. Pojawi się plansza do gry dla wybranej liczby graczy i uruchomi się serwer dla tylu klientów. Uruchamiamy tylu klientów za pomoca run Client i można grać. Wpisujemy ruch tak jak poprzednio w formacie (x_początkowy y_początkowy x_końcowy y_końcowy) i na planszy ruch ten się wykona jeśli jest poprawny, jeśli nie to pojawi się komunikat o błędzie w terminalu Main. Każdy rząd planszy jest przesunięty w stosunku do normalnej o pół, by można to było zmieścić w normnalnej tablicy. Po skoku kolejka zostaje u gracza, ponieważ 1 ruch może się składać z kilku skoków, wtedy gracz ma obowiązek dalej skakać tym pionkiem - jak już nie chce lub nie może musi zrezygnować z ruchu.
